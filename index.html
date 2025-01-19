@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Syed Haider Abbas Zaidi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="py-5">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="./Images/ASSET.jpg" alt="Profile Picture" class="img-fluid rounded-circle profile-pic">
+                </div>
+                <div class="col-md-6">
+                    <h1>Hello, I'm Syed Haider Abbas Zaidi</h1>
+                    <h4>Welcome to my portfolio website.</h4>
+                
+                    <!-- Social Links -->
+                    <div class="social-links text-center">
+                        <a href="https://github.com/haider14-9abbaas" target="_blank" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/haider-abbas-zaidi/" target="_blank" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                            </svg>
+                        </a>
+                        <a href="https://docs.google.com/document/d/1rOe8YpGe6_Xko8bQPwEJjVUIbrJUJryF/edit?usp=sharing&ouid=117431377946953981873&rtpof=true&sd=true" target="_blank" download="resume.pdf" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16" width="40" height="40">
+                              <path d="M.5 9.9a.5.5 0 0 1 .5.5V13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10.4a.5.5 0 0 1 1 0V13a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V10.4a.5.5 0 0 1 .5-.5z"/>
+                              <path d="M5.354 5.854a.5.5 0 0 0-.708 0L8 9.207l3.354-3.353a.5.5 0 0 0-.708-.708L8.5 8.293V1.5a.5.5 0 0 0-1 0v6.793L5.354 5.854z"/>
+                            </svg>
+                          </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h1 id="abouthead">About</h1>
+            <p>My name is Syed Haider Abbas Zaidi. I am a student currently enrolled in the Bachelor's Program of Cyber Security. I have a passion for Web & Mobile App Development and enjoy practicing and developing my skills through <strong> Saylani Mass IT Program. </strong></p>
+            <p>Some of my key skills include:</p>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>MySQL</li>
+                <li>C++</li>
+                <li>Python</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </div>
+    </section>
+<!-- Qualification Section -->
+    <section id="qualification" class="py-5">
+        <div class="container text-center">
+            <h1 id="qualifichead">Qualification</h1>
+            <div class="qualification-item">
+                <strong>Matriculation</strong>
+                <p>Habib Public School, R2V9+98P, Moulavi Tamizuddin Khan RD, Sultanabad Karachi, Sindh 74200.</p>
+            </div>
+            <div class="qualification-item">
+                <strong>Intermediate</strong>
+                <p>S.M Government Science College, V223+HWF, Shahrah-e-Liaquat, Seari Quarters, Karachi, Sindh.</p>
+            </div>
+            <div class="qualification-item">
+                <strong>Graduation</strong>
+                <p>Dawood University of Engineering & Technology Karachi, New M. A. Jinnah RD, Jamshed Quarters Muslimabad, Karachi, Sindh 74800.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-4" id="porthead">Portfolio</h1>
+            <div class="row">
+                <!-- Portfolio Item 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Eidi Distribution Web-App</h5>
+                            <p class="card-text">Streamline the tradition of sharing joy and celebration effortlessly with Eidi Distribution Web-App created via HTML, CSS, and JavaScript. Fostering connections and spreading smiles during festive occasions of the holy month of Shawwal.</p>
+                            <a href="https://haider14-9abbaas.github.io/Eidi-Distribution-Web-App/" class="btn btn-primary" target="_blank">GitHub Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Github Homepage Clone</h5>
+                            <p class="card-text">Dive into my GitHub Homepage Clone, a faithful rendition of GitHub's interface, offering a sleek and intuitive browsing experience. Seamlessly navigating repositories, user profiles, and trending projects, it brings the essence of GitHub to life with finesse.</p>
+                            <a href="https://github.com/haider14-9abbaas/Github-Homepage-Clone" class="btn btn-primary" target="_blank">GitHub Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">E-Commerce Product App Using API</h5>
+                            <p class="card-text">Developed a responsive e-commerce web application using HTML, CSS (Bootstrap), and JavaScript. Integrated with a RESTful API to fetch and display products dynamically. Features include Add to Cart, Wishlist, and responsive design for seamless user experience across devices.</p>
+                            <a href="https://github.com/haider14-9abbaas/E-Commerce-Product-App-Using-API" class="btn btn-primary" target="_blank">GitHub Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Reservation System Exploratory Data Analysis (EDA) Project</h5>
+                            <p class="card-text">A structured database for managing hotel operations, including schemas, SQL scripts, ER diagrams, and EDA queries. Designed for efficient handling of bookings, payments, and customer data.</p>
+                            <a href="https://github.com/haider14-9abbaas/Hotel-Reservation-Database---MySQL" class="btn btn-primary" target="_blank">GitHub Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Best Vision</h5>
+                            <p class="card-text">Best Vision: Your premier destination for all things online shopping, crafted with the latest in web technology. Powered by HTML5, CSS3, Bootstrap, and JavaScript, our website offers a seamless and dynamic browsing experience.</p>
+                            <a href="https://github.com/haider14-9abbaas/Best-Vision" class="btn btn-primary" target="_blank">GitHub Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Beach Side Gateway Resort</h5>
+                            <p class="card-text">This Python hotel reservation system uses Tkinter for the GUI, allowing users to book rooms, check availability, and calculate dynamic rates based on the season. It supports generating detailed receipts and managing room bookings with real-time updates on availability.</p>
+                            <a href="https://github.com/haider14-9abbaas/Hotel-Reservation-Sytem-Python" class="btn btn-primary" target="_blank">GitHub Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 7 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Interactive Quiz App</h5>
+                            <p class="card-text">A simple JavaScript quiz app with real-time feedback and results calculation. The app allows users to take a multiple-choice quiz, and at the end, displays a score based on correct answers.</p>
+                            <a href="https://github.com/haider14-9abbaas/Interactive-Quiz-App" class="btn btn-primary" target="_blank">GitHub Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h1 class="text-center" id="contacthead">Contact</h1>
+            <form action="contact.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #343a40; color: white; text-align: center; padding: 20px;">
+        <div>
+            <p>&copy; 2025 Syed Haider Abbas Zaidi. All rights reserved.</p>
+            
+                <a href="https://github.com/haider14-9abbaas" target="_blank" style="text-decoration: none; margin: 0 10px; color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" style="transition: color 0.3s;" onmouseover="this.style.fill='#007bff'" onmouseout="this.style.fill='white'" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/haider-abbas-zaidi/" target="_blank" style="text-decoration: none; margin: 0 10px; color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" style="transition: color 0.3s;" onmouseover="this.style.fill='#007bff'" onmouseout="this.style.fill='white'" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                    </svg>
+                </a>
+                <a href="https://docs.google.com/document/d/1rOe8YpGe6_Xko8bQPwEJjVUIbrJUJryF/edit?usp=sharing&ouid=117431377946953981873&rtpof=true&sd=true" target="_blank" download="resume.pdf" style="text-decoration: none; margin: 0 10px; color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16" width="30" height="30" style="transition: color 0.3s;" onmouseover="this.style.fill='#007bff'" onmouseout="this.style.fill='white'">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5V13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10.4a.5.5 0 0 1 1 0V13a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V10.4a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M5.354 5.854a.5.5 0 0 0-.708 0L8 9.207l3.354-3.353a.5.5 0 0 0-.708-.708L8.5 8.293V1.5a.5.5 0 0 0-1 0v6.793L5.354 5.854z"/>
+                    </svg>
+                </a>
+            
+        </div>
+    </footer>
+    
+    
+    
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

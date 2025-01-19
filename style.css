@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: transform 3s;
+}
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+    position: static;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+/* Home Section */
+#home {
+    background-color: #007bff;
+    padding: 100px 0;
+    color: #E7ECEF;
+}
+
+.profile-pic {
+    border: 8px solid #fff;
+    border-radius: 10%;
+    transition: transform 0.5s ease-out;
+}
+
+.profile-pic:hover {
+    transform: scale(0.7);
+}
+
+/* About Section */
+#about {
+    background-color: #E7ECEF;
+    padding: 100px 0;
+    color: #274C77;
+    
+}
+#abouthead{
+    color: #000000;
+}
+#qualification {
+    background-color: #E7ECEF;
+    padding: 100px 0;
+    color: #274C77;
+
+}
+#qualifichead{
+    color: #000000;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #E7ECEF;
+    padding: 100px 0;
+    color: #274C77;
+}
+#porthead{
+    color: #000000;
+}
+
+.card {
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease-in-out;
+    color: #333;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #E7ECEF;
+    padding: 100px 0;
+    color: #274C77;
+}
+#contacthead{
+    color:#000000;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+}
+
+#downloadBtn {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Button padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+#downloadBtn:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-top: 15px;
+    }
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Ensure buttons are visible and not overlapping */
+.card-body .btn {
+    display: inline-block;
+    margin-top: 10px;
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+/* Fix any potential hidden overflow issues */
+.card-body {
+    position: relative;
+    overflow: visible;
+}
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon svg {
+    fill: #000;
+    transition: fill 0.3s ease;
+}
+
+.social-icon:hover svg {
+    fill: #0077b5; /* LinkedIn color on hover */
+}
+
+.social-icon:focus svg {
+    fill: #333; /* Change color when focused */
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust spacing between icons */
+    margin-top: 20px;
+}
+
+.social-links svg {
+    width: 50px; /* Icon width */
+    height: 50px; /* Icon height */
+    transition: transform 0.3s ease, fill 0.3s ease;
+    fill: #E7ECEF; /* Default color */
+}
+
+.social-links svg:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    fill: #333; /* Change color on hover (LinkedIn blue) */
+}
