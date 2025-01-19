@@ -31,5 +31,3 @@ Feel free to connect with me on:
 
 ---
 
-### **GitHub Repo Description**  
-> 🌐 A responsive and visually appealing portfolio website showcasing my journey, skills, and projects as a developer. Built using **HTML**, **CSS**, and **JavaScript** with the support and knowledge gained from the **Saylani Mass IT Training Program (S.M.I.T)**.  
