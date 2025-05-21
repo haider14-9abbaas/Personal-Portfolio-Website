@@ -6,7 +6,7 @@
     <title>Portfolio Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -55,9 +55,7 @@
                 <div class="col-md-6">
                     <h1>Hello, I'm Syed Haider Abbas Zaidi</h1>
                     <h4>Welcome to my portfolio website.</h4>
-                
-                    <!-- Social Links -->
-                    <div class="social-links text-center">
+                    <div class="social-links">
                         <a href="https://github.com/haider14-9abbaas" target="_blank" class="social-icon">
                             <i class="bi bi-github" style="font-size: 2rem;"></i>
                         </a>
@@ -76,8 +74,8 @@
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container text-center">
-            <h1 id="abouthead">About</h1>
-            <p>My name is Syed Haider Abbas Zaidi. I am a student currently enrolled in the Bachelor's Program of Cyber Security. I have a passion for Web & Mobile App Development and enjoy practicing and developing my skills through <strong> Saylani Mass IT Program. </strong></p>
+            <h1>About</h1>
+            <p>My name is Syed Haider Abbas Zaidi. I am a student currently enrolled in the Bachelor's Program of Cyber Security. I have a passion for Web & Mobile App Development and enjoy practicing and developing my skills through <strong>Saylani Mass IT Program.</strong></p>
             <p>Some of my key skills include:</p>
             <ul>
                 <li>HTML5</li>
@@ -90,115 +88,65 @@
         </div>
     </section>
 
-    <!-- Qualification Section -->
-    <section id="qualification" class="py-5">
-        <div class="container text-center">
-            <h1 id="qualifichead">Qualification</h1>
-            <div class="qualification-item">
-                <strong>Matriculation</strong>
-                <p>Habib Public School, R2V9+98P, Moulavi Tamizuddin Khan RD, Sultanabad Karachi, Sindh 74200.</p>
-            </div>
-            <div class="qualification-item">
-                <strong>Intermediate</strong>
-                <p>S.M Government Science College, V223+HWF, Shahrah-e-Liaquat, Seari Quarters, Karachi, Sindh.</p>
-            </div>
-            <div class="qualification-item">
-                <strong>Graduation</strong>
-                <p>Dawood University of Engineering & Technology Karachi, New M. A. Jinnah RD, Jamshed Quarters Muslimabad, Karachi, Sindh 74800.</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-5">
         <div class="container">
-            <h1 class="text-center mb-4" id="porthead">Portfolio</h1>
+            <h1 class="text-center mb-5">Portfolio</h1>
             <div class="row">
-                <!-- AI vs Human Content Detection System -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">AI vs Human Content Detection System</h5>
-                            <p class="card-text">A Flask-based machine learning application designed to detect whether uploaded content — images, videos, or text — is human-generated or AI-generated.</p>
-                            <a href="https://github.com/haider14-9abbaas/Content-Authencity-System" class="btn btn-primary" target="_blank">GitHub Repository</a>
-                        </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="portfolio-item">
+                        <h3>AI vs Human Content Detection System</h3>
+                        <p>A Flask-based machine learning application designed to detect whether uploaded content — images, videos, or text — is human-generated or AI-generated.</p>
+                        <a href="https://github.com/haider14-9abbaas/Content-Authencity-System" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
-
-                <!-- Gemini Chatbot App -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Gemini Chatbot App</h5>
-                            <p class="card-text">A fully interactive chatbot interface built using Streamlit, powered by Google's Gemini Pro (1.5 Flash) via the official google-generativeai SDK. This app allows real-time AI-powered conversations with adjustable creativity, chat persistence, and a clean, responsive design.</p>
-                            <a href="https://github.com/haider14-9abbaas/streamlit-gemini-chat" class="btn btn-primary" target="_blank">GitHub Repository</a>
-                        </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="portfolio-item">
+                        <h3>Gemini Chatbot App</h3>
+                        <p>A fully interactive chatbot interface built using Streamlit, powered by Google's Gemini Pro (1.5 Flash) via the official google-generativeai SDK.</p>
+                        <a href="https://github.com/haider14-9abbaas/streamlit-gemini-chat" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
-
-                <!-- DevSnake -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">DevSnake - Code, Conquer, and Slither!</h5>
-                            <p class="card-text">DevSnake is a fun and interactive snake game built using HTML, CSS, and JavaScript. The goal is to control the snake, eat food, grow longer, and avoid colliding with the walls or itself.</p>
-                            <a href="https://github.com/haider14-9abbaas/DevSnake" class="btn btn-primary" target="_blank">GitHub Repository</a>
-                        </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="portfolio-item">
+                        <h3>DevSnake</h3>
+                        <p>DevSnake is a fun and interactive snake game built using HTML, CSS, and JavaScript. The goal is to control the snake, eat food, grow longer, and avoid colliding with the walls or itself.</p>
+                        <a href="https://github.com/haider14-9abbaas/DevSnake" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
-
-                <!-- Hiring Mine Job Portal Clone -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Hiring Mine Job Portal Clone</h5>
-                            <p class="card-text">A modern job portal clone with real-time listings, candidate profiles, and responsive design. Built with Bootstrap 5 + JavaScript, integrating the Hiring Mine API. Features dark mode, dynamic content, and mobile-first UI.</p>
-                            <a href="https://github.com/haider14-9abbaas/HiringMine-Clone-FetchAPI" class="btn btn-primary" target="_blank">GitHub Repository</a>
-                        </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="portfolio-item">
+                        <h3>Hiring Mine Job Portal Clone</h3>
+                        <p>A modern job portal clone with real-time listings, candidate profiles, and responsive design. Built with Bootstrap 5 + JavaScript, integrating the Hiring Mine API.</p>
+                        <a href="https://github.com/haider14-9abbaas/HiringMine-Clone-FetchAPI" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
-
-                <!-- OLX UI Clone -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">OLX UI Clone</h5>
-                            <p class="card-text">This project replicates the user interface of the popular online marketplace OLX, showcasing my skills in web development and design.</p>
-                            <a href="https://github.com/haider14-9abbaas/OLX-UI-Clone" class="btn btn-primary" target="_blank">GitHub Repository</a>
-                        </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="portfolio-item">
+                        <h3>OLX UI Clone</h3>
+                        <p>This project replicates the user interface of the popular online marketplace OLX, showcasing my skills in web development and design.</p>
+                        <a href="https://github.com/haider14-9abbaas/OLX-UI-Clone" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
-
-                <!-- Youtube Homepage Clone -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Youtube Homepage Clone</h5>
-                            <p class="card-text">This is a YouTube Clone project built using HTML, CSS, JavaScript, and Bootstrap. It replicates the basic functionality and design of YouTube's homepage, including a responsive layout, video cards, a sidebar, and a search bar.</p>
-                            <a href="https://github.com/haider14-9abbaas/Youtube-Hompage-Clone" class="btn btn-primary" target="_blank">GitHub Repository</a>
-                        </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="portfolio-item">
+                        <h3>Youtube Homepage Clone</h3>
+                        <p>This is a YouTube Clone project built using HTML, CSS, JavaScript, and Bootstrap. It replicates the basic functionality and design of YouTube's homepage.</p>
+                        <a href="https://github.com/haider14-9abbaas/Youtube-Hompage-Clone" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
-
-                <!-- IoT Security System -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">IoT Security System</h5>
-                            <p class="card-text">This project demonstrates core cryptographic concepts used to secure communication in an IoT environment with AES encryption ensuring data integrity with hashing Preventing replay attacks with timestamps and nonces Viewing logs.</p>
-                            <a href="https://github.com/haider14-9abbaas/IoT-Security-System" class="btn btn-primary" target="_blank">GitHub Repository</a>
-                        </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="portfolio-item">
+                        <h3>IoT Security System</h3>
+                        <p>This project demonstrates core cryptographic concepts used to secure communication in an IoT environment with AES encryption ensuring data integrity with hashing.</p>
+                        <a href="https://github.com/haider14-9abbaas/IoT-Security-System" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
-
-                <!-- Hotel Reservation Database -->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Hotel Reservation Database</h5>
-                            <p class="card-text">A structured database for managing hotel operations, including schemas, SQL scripts, ER diagrams, and EDA queries. Designed for efficient handling of bookings, payments, and customer data.</p>
-                            <a href="https://github.com/haider14-9abbaas/Hotel-Reservation-Database---MySQL" class="btn btn-primary" target="_blank">GitHub Repository</a>
-                        </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="portfolio-item">
+                        <h3>Hotel Reservation Database</h3>
+                        <p>A structured database for managing hotel operations, including schemas, SQL scripts, ER diagrams, and EDA queries.</p>
+                        <a href="https://github.com/haider14-9abbaas/Hotel-Reservation-Database---MySQL" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
@@ -208,7 +156,7 @@
     <!-- Certifications Section -->
     <section id="certifications" class="py-5">
         <div class="container">
-            <h1 class="text-center" id="certificationshead">Certifications</h1>
+            <h1 class="text-center mb-4">Certifications</h1>
             <div id="certificationsCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -217,9 +165,7 @@
                             <p class="certificate-issuer">Coursera Project Network</p>
                             <a href="https://www.coursera.org/account/accomplishments/verify/4P5NMU5LM5SZ" 
                                target="_blank" 
-                               class="verify-link">
-                                Verify Certificate
-                            </a>
+                               class="btn">Verify Certificate</a>
                         </div>
                     </div>
                 </div>
@@ -228,9 +174,9 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5">
         <div class="container">
-            <h1 class="text-center" id="contacthead">Contact</h1>
+            <h1 class="text-center mb-4">Contact</h1>
             <form action="contact.php" method="POST">
                 <div class="form-group">
                     <label for="name">Full Name</label>
@@ -249,9 +195,9 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer style="background-color: #343a40; color: white; text-align: center; padding: 20px;">
-        <div>
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container text-center">
             <p>&copy; 2025 Syed Haider Abbas Zaidi. All rights reserved.</p>
             <div class="social-links">
                 <a href="https://github.com/haider14-9abbaas" target="_blank" class="social-icon">
@@ -266,8 +212,8 @@
             </div>
         </div>
     </footer>
-    
-    <!-- Bootstrap JavaScript -->
+
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

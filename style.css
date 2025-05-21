@@ -20,7 +20,6 @@ body {
     margin: 0;
     padding: 0;
     transition: all 0.3s ease;
-    perspective: 1000px;
 }
 
 body.dark-mode {
@@ -72,16 +71,6 @@ body.dark-mode {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* Sections */
-section {
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease;
-}
-
-section:hover {
-    transform: translateZ(20px);
-}
-
 /* Home Section */
 #home {
     background: linear-gradient(135deg, var(--primary-color), #0056b3);
@@ -99,72 +88,115 @@ section:hover {
 }
 
 .profile-pic:hover {
-    transform: rotate(5deg) scale(1.05);
+    transform: scale(1.05);
 }
 
-/* Cards */
-.card {
-    background-color: var(--card-bg-light);
-    border: none;
-    border-radius: 15px;
-    transition: all 0.4s ease;
-    transform-style: preserve-3d;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.dark-mode .card {
-    background-color: var(--card-bg-dark);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-
-.card:hover {
-    transform: translateY(-15px) rotateX(5deg) rotateY(5deg);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-}
-
-/* Sections Background */
-#about, #qualification, #portfolio, #certifications, #contact {
-    background-color: var(--section-bg-light);
+/* About Section */
+#about {
     padding: 100px 0;
-    position: relative;
+    background-color: var(--section-bg-light);
 }
 
-.dark-mode #about,
-.dark-mode #qualification,
-.dark-mode #portfolio,
-.dark-mode #certifications,
-.dark-mode #contact {
+.dark-mode #about {
     background-color: var(--section-bg-dark);
 }
 
-/* Animations */
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
+#about ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.social-links svg {
-    animation: float 3s ease-in-out infinite;
+#about ul li {
+    background-color: var(--card-bg-light);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
-/* Certificate Card */
+.dark-mode #about ul li {
+    background-color: var(--card-bg-dark);
+}
+
+#about ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 100px 0;
+    background-color: var(--section-bg-light);
+}
+
+.dark-mode #portfolio {
+    background-color: var(--section-bg-dark);
+}
+
+.portfolio-item {
+    background-color: var(--card-bg-light);
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.dark-mode .portfolio-item {
+    background-color: var(--card-bg-dark);
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.portfolio-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.portfolio-item p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.portfolio-item .btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.portfolio-item .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Certifications Section */
 .certificate-card {
     background: var(--card-bg-light);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    transition: all 0.4s ease;
-    transform-style: preserve-3d;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
 .dark-mode .certificate-card {
     background: var(--card-bg-dark);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 .certificate-card:hover {
-    transform: scale(1.02) rotateX(2deg);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 /* Form Elements */
@@ -186,29 +218,20 @@ section:hover {
     transform: translateY(-2px);
 }
 
-/* Buttons */
-.btn {
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    color: inherit;
+    margin: 0 10px;
     transition: all 0.3s ease;
-    transform-style: preserve-3d;
-    border-radius: 10px;
 }
 
-.btn:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 7px 14px rgba(0,0,0,0.2);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar-nav {
-        margin-top: 15px;
-    }
-    .certificate-card {
-        margin: 0 15px;
-    }
-    .profile-pic {
-        margin-bottom: 30px;
-    }
+.social-icon:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
 }
 
 /* Footer */
@@ -216,10 +239,25 @@ footer {
     background-color: #343a40;
     color: #fff;
     padding: 20px 0;
-    position: relative;
-    transform-style: preserve-3d;
 }
 
 .dark-mode footer {
     background-color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-top: 15px;
+    }
+    .profile-pic {
+        margin-bottom: 30px;
+    }
+    #about ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-item {
+        margin: 15px;
+    }
 }
